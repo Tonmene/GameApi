@@ -1,0 +1,127 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Desi Sophia\\source\\repos\\GameApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2D3333A-13A8-FAAD-1662-CD005370980F}|GameApi\\GameApi.csproj|c:\\users\\desi sophia\\source\\repos\\gameapi\\gameapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2D3333A-13A8-FAAD-1662-CD005370980F}|GameApi\\GameApi.csproj|solutionrelative:gameapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2D3333A-13A8-FAAD-1662-CD005370980F}|GameApi\\GameApi.csproj|c:\\users\\desi sophia\\source\\repos\\gameapi\\gameapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2D3333A-13A8-FAAD-1662-CD005370980F}|GameApi\\GameApi.csproj|solutionrelative:gameapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2D3333A-13A8-FAAD-1662-CD005370980F}|GameApi\\GameApi.csproj|c:\\users\\desi sophia\\source\\repos\\gameapi\\gameapi\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2D3333A-13A8-FAAD-1662-CD005370980F}|GameApi\\GameApi.csproj|solutionrelative:gameapi\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2D3333A-13A8-FAAD-1662-CD005370980F}|GameApi\\GameApi.csproj|c:\\users\\desi sophia\\source\\repos\\gameapi\\gameapi\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2D3333A-13A8-FAAD-1662-CD005370980F}|GameApi\\GameApi.csproj|solutionrelative:gameapi\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2D3333A-13A8-FAAD-1662-CD005370980F}|GameApi\\GameApi.csproj|c:\\users\\desi sophia\\source\\repos\\gameapi\\gameapi\\data\\gamedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2D3333A-13A8-FAAD-1662-CD005370980F}|GameApi\\GameApi.csproj|solutionrelative:gameapi\\data\\gamedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2D3333A-13A8-FAAD-1662-CD005370980F}|GameApi\\GameApi.csproj|c:\\users\\desi sophia\\source\\repos\\gameapi\\gameapi\\services\\igameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2D3333A-13A8-FAAD-1662-CD005370980F}|GameApi\\GameApi.csproj|solutionrelative:gameapi\\services\\igameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Desi Sophia\\source\\repos\\GameApi\\GameApi\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "GameApi\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Desi Sophia\\source\\repos\\GameApi\\GameApi\\Properties\\launchSettings.json",
+              "RelativeToolTip": "GameApi\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-15T13:32:18.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Desi Sophia\\source\\repos\\GameApi\\GameApi\\Program.cs",
+              "RelativeDocumentMoniker": "GameApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Desi Sophia\\source\\repos\\GameApi\\GameApi\\Program.cs",
+              "RelativeToolTip": "GameApi\\Program.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAADcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T12:00:30.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IGameService.cs",
+              "DocumentMoniker": "C:\\Users\\Desi Sophia\\source\\repos\\GameApi\\GameApi\\Services\\IGameService.cs",
+              "RelativeDocumentMoniker": "GameApi\\Services\\IGameService.cs",
+              "ToolTip": "C:\\Users\\Desi Sophia\\source\\repos\\GameApi\\GameApi\\Services\\IGameService.cs",
+              "RelativeToolTip": "GameApi\\Services\\IGameService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T11:51:08.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\Desi Sophia\\source\\repos\\GameApi\\GameApi\\Models\\Game.cs",
+              "RelativeDocumentMoniker": "GameApi\\Models\\Game.cs",
+              "ToolTip": "C:\\Users\\Desi Sophia\\source\\repos\\GameApi\\GameApi\\Models\\Game.cs",
+              "RelativeToolTip": "GameApi\\Models\\Game.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAgwBEAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T10:09:25.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameService.cs",
+              "DocumentMoniker": "C:\\Users\\Desi Sophia\\source\\repos\\GameApi\\GameApi\\Services\\GameService.cs",
+              "RelativeDocumentMoniker": "GameApi\\Services\\GameService.cs",
+              "ToolTip": "C:\\Users\\Desi Sophia\\source\\repos\\GameApi\\GameApi\\Services\\GameService.cs",
+              "RelativeToolTip": "GameApi\\Services\\GameService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T11:51:43.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GameDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Desi Sophia\\source\\repos\\GameApi\\GameApi\\Data\\GameDbContext.cs",
+              "RelativeDocumentMoniker": "GameApi\\Data\\GameDbContext.cs",
+              "ToolTip": "C:\\Users\\Desi Sophia\\source\\repos\\GameApi\\GameApi\\Data\\GameDbContext.cs",
+              "RelativeToolTip": "GameApi\\Data\\GameDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T11:50:27.591Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
