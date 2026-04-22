@@ -5,7 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace GamesCrudApi.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/games")]
+    [Route("api/game")]
     public class GamesController : ControllerBase
     {
         private readonly IGameService _service;

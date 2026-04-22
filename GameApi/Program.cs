@@ -14,9 +14,18 @@ builder.Services.AddSwaggerGen();
 
 // PostgreSQL + EF Core
 var connString = builder.Configuration.GetConnectionString("Postgres");
+var useInMemoryDatabase = builder.Configuration.GetValue<bool>("UseInMemoryDatabase");
 
-builder.Services.AddDbContext<GameDbContext>(options =>
-    options.UseNpgsql(connString));
+if (useInMemoryDatabase || string.IsNullOrWhiteSpace(connString))
+{
+    builder.Services.AddDbContext<GameDbContext>(options =>
+        options.UseInMemoryDatabase("GamesDb"));
+}
+else
+{
+    builder.Services.AddDbContext<GameDbContext>(options =>
+        options.UseNpgsql(connString));
+}
 
 // Dependency injection (Services layer)
 builder.Services.AddScoped<IGameService, GameService>();
@@ -26,7 +35,11 @@ var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<GameDbContext>();
-    await dbContext.Database.MigrateAsync();
+
+    if (!dbContext.Database.IsInMemory())
+    {
+        await dbContext.Database.MigrateAsync();
+    }
 
     if (!await dbContext.Games.AnyAsync())
     {
@@ -53,7 +66,7 @@ using (var scope = app.Services.CreateScope())
                 Description = "Dark fantasy RPG with open-world exploration."
             });
 
-        //await dbContext.SaveChangesAsync();
+        await dbContext.SaveChangesAsync();
     }
 }
 
