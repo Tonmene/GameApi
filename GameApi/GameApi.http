@@ -20,7 +20,7 @@ Content-Type: application/json
 
 ###
 
-P4OST {{GameApi_HostAddress}}/api/games
+POST {{GameApi_HostAddress}}/api/games
 Content-Type: application/json
 
 {
