@@ -91,3 +91,84 @@ Content-Type: application/json
   "customersFrequentlyRented": "Dark Souls III, Lies of P",
   "description": "Dark fantasy RPG with open-world exploration."
 }
+
+###
+
+POST {{GameApi_HostAddress}}/api/games
+Content-Type: application/json
+
+{
+  "name": "Stardew Valley",
+  "genre": "Simulation RPG",
+  "releaseDate": "2016-02-26T00:00:00Z",
+  "condition": "Old",
+  "price": 14.99,
+  "purchaseOption": "Rent",
+  "contentDescription": "Mild fantasy themes",
+  "hasInteractiveElements": true,
+  "userRating": 9.1,
+  "userReview": "Relaxing farming and cozy gameplay loop.",
+  "critics": "PC Gamer 89/100",
+  "features": "Farming, Crafting, Local co-op",
+  "onlinePlayers": 4,
+  "offlinePlayers": 1,
+  "publisher": "ConcernedApe",
+  "ageRating": "Everyone 10+",
+  "specsAndRequirements": "Windows 10, 2GB RAM, Intel HD 4000+",
+  "customersFrequentlyRented": "Spiritfarer, My Time at Portia",
+  "description": "A farming RPG where you build a life in Pelican Town."
+}
+
+###
+
+POST {{GameApi_HostAddress}}/api/games
+Content-Type: application/json
+
+{
+  "name": "Grand Theft Auto V",
+  "genre": "Action",
+  "releaseDate": "2013-09-17T00:00:00Z",
+  "condition": "Old",
+  "price": 29.99,
+  "purchaseOption": "Buy",
+  "contentDescription": "Strong violence, language, drug reference",
+  "hasInteractiveElements": true,
+  "userRating": 8.9,
+  "userReview": "Huge open world with lots to do.",
+  "critics": "Metacritic 97",
+  "features": "Open world, Online mode, Heists",
+  "onlinePlayers": 30,
+  "offlinePlayers": 1,
+  "publisher": "Rockstar Games",
+  "ageRating": "Mature 17+",
+  "specsAndRequirements": "Windows 10, 8GB RAM, GTX 660+",
+  "customersFrequentlyRented": "Red Dead Redemption 2, Watch Dogs 2",
+  "description": "Crime-based sandbox with story and multiplayer content."
+}
+
+###
+
+POST {{GameApi_HostAddress}}/api/games
+Content-Type: application/json
+
+{
+  "name": "EA Sports FC 25",
+  "genre": "Sports",
+  "releaseDate": "2024-09-27T00:00:00Z",
+  "condition": "New",
+  "price": 69.99,
+  "purchaseOption": "Rent",
+  "contentDescription": "In-game purchases, online interactions",
+  "hasInteractiveElements": true,
+  "userRating": 7.8,
+  "userReview": "Great matchday feel and improved animations.",
+  "critics": "IGN 7/10",
+  "features": "Career Mode, Ultimate Team, Clubs",
+  "onlinePlayers": 22,
+  "offlinePlayers": 4,
+  "publisher": "EA Sports",
+  "ageRating": "Everyone",
+  "specsAndRequirements": "Windows 10, 12GB RAM, GTX 1050 Ti+",
+  "customersFrequentlyRented": "NBA 2K25, eFootball",
+  "description": "Football sim with licensed teams, modes, and online play."
+}
