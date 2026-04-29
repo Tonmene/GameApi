@@ -10,5 +10,6 @@ namespace GamesCrudApi.Services
         Task<Game> CreateAsync(Game game);
         Task<bool> UpdateAsync(int id, Game game);
         Task<bool> DeleteAsync(int id);
+        Task<RentGameResult> RentAsync(int id);
     }
 }

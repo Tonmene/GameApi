@@ -57,5 +57,23 @@ namespace GamesCrudApi.Controllers
             if (!deleted) return NotFound();
             return NoContent(); // 204
         }
+
+        // POST: api/games/{id}/rent
+        [HttpPost("{id}/rent")]
+        public async Task<IActionResult> Rent(int id)
+        {
+            var result = await _service.RentAsync(id);
+            if (!result.Success)
+            {
+                if (result.Message == "Game not found.")
+                {
+                    return NotFound(result);
+                }
+
+                return BadRequest(result);
+            }
+
+            return Ok(result);
+        }
     }
 }

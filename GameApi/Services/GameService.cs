@@ -83,5 +83,49 @@ namespace GamesCrudApi.Services
             await _context.SaveChangesAsync();
             return true;
         }
+
+        public async Task<RentGameResult> RentAsync(int id)
+        {
+            var existing = await _context.Games.FirstOrDefaultAsync(g => g.Id == id);
+            if (existing == null)
+            {
+                return new RentGameResult
+                {
+                    Success = false,
+                    Message = "Game not found."
+                };
+            }
+
+            if (existing.PurchaseOption != PurchaseOption.Rent)
+            {
+                return new RentGameResult
+                {
+                    Success = false,
+                    Message = "This game is not available for rent.",
+                    Game = existing
+                };
+            }
+
+            if (existing.IsRented)
+            {
+                return new RentGameResult
+                {
+                    Success = false,
+                    Message = "This game is already rented.",
+                    Game = existing
+                };
+            }
+
+            existing.IsRented = true;
+            existing.LastRentedAtUtc = DateTime.UtcNow;
+            await _context.SaveChangesAsync();
+
+            return new RentGameResult
+            {
+                Success = true,
+                Message = $"You have successfully rented '{existing.Name}'.",
+                Game = existing
+            };
+        }
     }
 }

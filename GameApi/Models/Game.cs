@@ -47,6 +47,10 @@ namespace GamesCrudApi.Models
 
         public string? CustomersFrequentlyRented { get; set; }
 
+        public bool IsRented { get; set; }
+
+        public DateTime? LastRentedAtUtc { get; set; }
+
         public string? Description { get; set; }
     }
 }

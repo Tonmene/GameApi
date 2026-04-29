@@ -35,6 +35,11 @@ Content-Type: application/json
 
 ###
 
+POST {{GameApi_HostAddress}}/api/games/1/rent
+Accept: application/json
+
+###
+
 POST {{GameApi_HostAddress}}/api/games
 Content-Type: application/json
 
