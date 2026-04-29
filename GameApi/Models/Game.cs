@@ -15,6 +15,38 @@ namespace GamesCrudApi.Models
 
         public DateTime ReleaseDate { get; set; }
 
+        public GameCondition Condition { get; set; } = GameCondition.New;
+
+        [Range(0, 1000000)]
+        public decimal Price { get; set; }
+
+        public PurchaseOption PurchaseOption { get; set; } = PurchaseOption.Buy;
+
+        public string? ContentDescription { get; set; }
+
+        public bool HasInteractiveElements { get; set; }
+
+        [Range(0, 10)]
+        public decimal UserRating { get; set; }
+
+        public string? UserReview { get; set; }
+
+        public string? Critics { get; set; }
+
+        public string? Features { get; set; }
+
+        public int OnlinePlayers { get; set; }
+
+        public int OfflinePlayers { get; set; }
+
+        public string? Publisher { get; set; }
+
+        public string? AgeRating { get; set; }
+
+        public string? SpecsAndRequirements { get; set; }
+
+        public string? CustomersFrequentlyRented { get; set; }
+
         public string? Description { get; set; }
     }
 }

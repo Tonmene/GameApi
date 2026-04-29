@@ -53,6 +53,21 @@ namespace GamesCrudApi.Services
             existing.Name = game.Name;
             existing.Genre = game.Genre;
             existing.ReleaseDate = ToUtc(game.ReleaseDate);
+            existing.Condition = game.Condition;
+            existing.Price = game.Price;
+            existing.PurchaseOption = game.PurchaseOption;
+            existing.ContentDescription = game.ContentDescription;
+            existing.HasInteractiveElements = game.HasInteractiveElements;
+            existing.UserRating = game.UserRating;
+            existing.UserReview = game.UserReview;
+            existing.Critics = game.Critics;
+            existing.Features = game.Features;
+            existing.OnlinePlayers = game.OnlinePlayers;
+            existing.OfflinePlayers = game.OfflinePlayers;
+            existing.Publisher = game.Publisher;
+            existing.AgeRating = game.AgeRating;
+            existing.SpecsAndRequirements = game.SpecsAndRequirements;
+            existing.CustomersFrequentlyRented = game.CustomersFrequentlyRented;
             existing.Description = game.Description;
 
             await _context.SaveChangesAsync();

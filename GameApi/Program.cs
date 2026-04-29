@@ -2,11 +2,16 @@ using GamesCrudApi.Data;
 using GamesCrudApi.Models;
 using GamesCrudApi.Services;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Controllers
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+    });
 
 // Swagger / OpenAPI
 builder.Services.AddEndpointsApiExplorer();
@@ -20,6 +25,7 @@ builder.Services.AddDbContext<GameDbContext>(options =>
 
 // Dependency injection (Services layer)
 builder.Services.AddScoped<IGameService, GameService>();
+builder.Services.AddScoped<IAuthorService, AuthorService>();
 
 var app = builder.Build();
 

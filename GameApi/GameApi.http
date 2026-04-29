@@ -12,22 +12,52 @@ POST {{GameApi_HostAddress}}/api/games
 Content-Type: application/json
 
 {
-  "name": "The Legend of Zelda: Breath of the Wild",
+  "name": "The Last of Us Part I",
   "genre": "Action-Adventure",
-  "releaseDate": "2017-03-03T00:00:00",
-  "description": "Open-world adventure in Hyrule."
+  "releaseDate": "2022-09-02T00:00:00Z",
+  "condition": "New",
+  "price": 69.99,
+  "purchaseOption": "Buy",
+  "contentDescription": "Violence, Blood",
+  "hasInteractiveElements": true,
+  "userRating": 9.4,
+  "userReview": "Excellent storytelling and gameplay.",
+  "critics": "IGN 10/10, GamesRadar 5/5",
+  "features": "Single-player campaign, Photo mode",
+  "onlinePlayers": 0,
+  "offlinePlayers": 1,
+  "publisher": "Sony Interactive Entertainment",
+  "ageRating": "Mature 17+",
+  "specsAndRequirements": "PS5 or PC, 16GB RAM, modern GPU",
+  "customersFrequentlyRented": "Uncharted 4, God of War Ragnarok",
+  "description": "Story-rich remake with improved visuals."
 }
 
 ###
 
-P4OST {{GameApi_HostAddress}}/api/games
+POST {{GameApi_HostAddress}}/api/games
 Content-Type: application/json
 
 {
-  "name": "Minecraft",
-  "genre": "Sandbox",
-  "releaseDate": "2011-11-18T00:00:00",
-  "description": "Creative building and survival gameplay."
+  "name": "Mario Kart 8 Deluxe",
+  "genre": "Racing",
+  "releaseDate": "2017-04-28T00:00:00Z",
+  "condition": "Old",
+  "price": 39.99,
+  "purchaseOption": "Rent",
+  "contentDescription": "Mild cartoon action",
+  "hasInteractiveElements": true,
+  "userRating": 8.8,
+  "userReview": "Fun with friends and family.",
+  "critics": "Metacritic 92",
+  "features": "Split-screen, Online multiplayer",
+  "onlinePlayers": 12,
+  "offlinePlayers": 4,
+  "publisher": "Nintendo",
+  "ageRating": "Everyone",
+  "specsAndRequirements": "Nintendo Switch",
+  "customersFrequentlyRented": "Super Smash Bros Ultimate, Nintendo Switch Sports",
+  "description": "Accessible arcade racing with many tracks."
 }
 
 ###
@@ -37,9 +67,22 @@ Content-Type: application/json
 
 {
   "name": "Elden Ring",
-  "genre": "Action RPG",
-  "releaseDate": "2022-02-25T00:00:00",
+  "genre": "Action-Adventure",
+  "releaseDate": "2022-02-25T00:00:00Z",
+  "condition": "New",
+  "price": 59.99,
+  "purchaseOption": "Buy",
+  "contentDescription": "Fantasy violence",
+  "hasInteractiveElements": true,
+  "userRating": 9.6,
+  "userReview": "Huge world and deep combat.",
+  "critics": "GameSpot 10/10",
+  "features": "Open world, Co-op, PvP",
+  "onlinePlayers": 6,
+  "offlinePlayers": 1,
+  "publisher": "Bandai Namco",
+  "ageRating": "Mature 17+",
+  "specsAndRequirements": "Windows 10, 12GB RAM, GTX 1060+",
+  "customersFrequentlyRented": "Dark Souls III, Lies of P",
   "description": "Dark fantasy RPG with open-world exploration."
 }
-
-###
