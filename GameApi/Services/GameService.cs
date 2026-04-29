@@ -8,6 +8,20 @@ namespace GamesCrudApi.Services
     {
         private readonly GameDbContext _context;
 
+        // Npgsql maps .NET DateTime to PostgreSQL `timestamp with time zone` by default.
+        // That mapping requires DateTime values to have `Kind=Utc` (or be convertible to UTC).
+        private static DateTime ToUtc(DateTime value)
+        {
+            return value.Kind switch
+            {
+                DateTimeKind.Utc => value,
+                // JSON like "2020-01-01T00:00:00" parses as Unspecified. We treat it as UTC for storage.
+                DateTimeKind.Unspecified => DateTime.SpecifyKind(value, DateTimeKind.Utc),
+                DateTimeKind.Local => value.ToUniversalTime(),
+                _ => DateTime.SpecifyKind(value, DateTimeKind.Utc)
+            };
+        }
+
         public GameService(GameDbContext context)
         {
             _context = context;
@@ -25,6 +39,7 @@ namespace GamesCrudApi.Services
 
         public async Task<Game> CreateAsync(Game game)
         {
+            game.ReleaseDate = ToUtc(game.ReleaseDate);
             _context.Games.Add(game);
             await _context.SaveChangesAsync();
             return game;
@@ -37,7 +52,7 @@ namespace GamesCrudApi.Services
 
             existing.Name = game.Name;
             existing.Genre = game.Genre;
-            existing.ReleaseDate = game.ReleaseDate;
+            existing.ReleaseDate = ToUtc(game.ReleaseDate);
             existing.Description = game.Description;
 
             await _context.SaveChangesAsync();
